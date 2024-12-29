@@ -8,6 +8,20 @@
     margin: 0;
     padding: 0;
 }
+.image-container {
+    width: 100%;
+    overflow: hidden; /* מונע גלישה */
+    text-align: center; /* ממרכז את התמונה */
+}
+
+.project-image {
+    max-width: 100%;
+    display: block;
+    object-fit: contain; /* מבטיח שהתמונה תישאר ביחס המקורי */
+    border-radius: 8px; /* עיגול פינות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל */
+}
+
 
 h1,
 h2 {
@@ -292,6 +306,17 @@ header {
     padding-top: 65px;
     margin-top: -65px;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* אפשרות להוסיף עיגול פינות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* אפשרות להוסיף צל */
+}
 
 /*
  * Expertize accordion
@@ -448,15 +473,27 @@ footer {
     width:fit-content;
     height:2px;
 }
-/* סגנון הכפתור הבסיסי */
 .btn {
-    color: #fff; /* צבע הטקסט של הכפתור */
-    border: none; /* ללא גבולות */
-    cursor: pointer; /* שינוי הסמן כדי להראות שזה כפתור */
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
 }
 
-    /* סגנון כאשר העכבר מרחף מעל הכפתור */
     .btn:hover {
-        background-color: #ff66ff; /* צבע רקע חדש כאשר העכבר מרחף מעל */
-        color: #000; /* צבע טקסט חדש כאשר העכבר מרחף מעל */
+        background-color: #ff66ff; 
+        color: #000;
     }
+.image-container {
+    width: 90%;
+    overflow: hidden; /* מונע גלישה */
+    text-align: center; /* ממרכז את התמונה */
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; /* מבטיח שהתמונה תישאר ביחס המקורי */
+    border-radius: 8px; /* עיגול פינות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל */
+}
